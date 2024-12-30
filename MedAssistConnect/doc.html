@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors</title>
+    <style>
+         .portfolio{
+   background: var(--second-bg-color);
+ }
+ body{
+    margin: 0;
+    padding: 0;
+    background-image: url('homebackg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+.portfolio h2{
+   margin-bottom: 4rem;
+   color: white;
+}
+.portfolio-container{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   align-items: center;
+   gap: 2.5rem;
+}
+.portfolio-container .portfolio-box{
+   position: relative;
+   border-radius: 2rem;
+   box-shadow: 0 0 1rem rgb(171, 216, 231);
+   overflow: hidden;
+   display: flex;
+}
+.portfolio-box img{
+   width: 100%;
+   transition: .5s ease;
+}
+.portfolio-box:hover img{
+   transform: scale(1.1);
+}
+.portfolio-box .portfolio-layer{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(rgba(0,0,0, .1),var(--main-color));
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   padding: 0 4rem;
+   transform: translateY(100%);
+   transition: .5s ease;
+}
+.portfolio-box:hover .portfolio-layer{
+   transform: translateY(0);
+}
+
+.portfolio-layer h4{
+   font-size: 3rem;
+}
+
+.portfolio-layer p{
+   font-size: 1.6rem;
+   margin: .3rem 0 1rem;
+}
+
+.portfolio-layer a{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 5rem;
+   height: 5rem;
+   background:red;
+   border-radius: 50%;
+}
+
+.portfolio-layer a i {
+   font-size: 2rem;
+   color: black;
+}
+@media(max-width:991px){
+    .portfolio{
+      padding-bottom: 7rem;
+   }
+
+}
+.home a{
+    width: 100px;
+    height:70px ;
+    font-size: 15px;
+    color: white;
+    border-radius: 20px;
+    background-color:darkblue;
+    
+}
+
+    </style>
+</head>
+<body>
+    <section class="portfolio"id="portfolio">
+        <h2 class="heading"> <span>specialized doctors</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="Dr.USHA GUPTHA.jpg"alt="">
+                <div class="portfolio-layer">
+                    <h4>Dr.USHA GUPTHA</h4>
+                    <p>Gynaecologists and Obstetricians are medical practitioners with specialisations in both gynaecology and obstetrics.</p>
+                    <a href="https://www.justdial.com/Varanasi/Dr-Usha-Gupta-Aashirvad-Multi-Speciality-Hospital-Near-Birdopur-Mahmoorganj/0542PX542-X542-100226001207-K7N8DC_BZDET"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="Dr.Shipra Paul.jpg"alt="">
+                <div class="portfolio-layer">
+                    <h4>Dr.SHIPRA PAUL</h4>
+                    <p>Anatomical study of anomalous posterior horn of lateral ventricle of brain and its clinical significance</p>
+                    <a href="https://www.justdial.com/Port-Blair/Dr-Shipra-Paul-Havelock/9999P3192-3192-140518123852-N6Z9_BZDET"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="Dr.Chitra Raghunandhan.jpg"alt="">
+                <div class="portfolio-layer">
+                    <h4>Dr.Chitra Raghunandhan</h4>
+                    <p>Obstetrics & Gynaecology</p>
+                    <a href="https://www.justdial.com/Delhi/Dr-Chitra-Raghunandan-Near-Hauz-Khas-Telephone-Exchange-Safdarjung-Development-Area/011PXX11-XX11-151210194925-T3G6_BZDET"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="ADR.M P Arora.jpg"alt="">
+                <div class="portfolio-layer">
+                    <h4>DR.M P Arora</h4>
+                    <p>Best experienced medical professional with General Physician speciality.</p>
+                    <a href="https://www.justdial.com/delhi/Dr-M-P-Arora/011PXX11-XX11-140526193536-V3C3_BZDET?auto=1&trkid=2305165136"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="home">
+        <a href="index.html">Back</a>
+    </div>
+
+</body>
+</html>

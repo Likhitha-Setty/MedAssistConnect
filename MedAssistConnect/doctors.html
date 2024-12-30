@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+
+ }
+
+ .heading{
+    text-align: center;
+    font-size: 4.5rem;
+ }
+
+ .Doctors{
+   background: var(--second-bg-color);
+ }
+.Doctors h2{
+   margin-bottom: 4rem;
+}
+.Doc-container{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   align-items: center;
+   gap: 2.5rem;
+}
+.Doc-container .portfolio-box{
+   position: relative;
+   border-radius: 2rem;
+   box-shadow: 0 0 1rem var(--bg-color);
+   overflow: hidden;
+   display: flex;
+}
+.Doc-box img{
+   width: 100%;
+   transition: .5s ease;
+}
+.Doc-box:hover img{
+   transform: scale(1.1);
+}
+.Doc-box .Doc-layer{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(rgba(0,0,0, .1),var(--main-color));
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   padding: 0 4rem;
+   transform: translateY(100%);
+   transition: .5s ease;
+}
+.Doc-box:hover .Doc-layer{
+   transform: translateY(0);
+}
+
+.Doc-layer h4{
+   font-size: 3rem;
+   
+}
+
+.Doc-layer p{
+   font-size: 1.6rem;
+   margin: .3rem 0 1rem;
+}
+
+.Doc-layer a{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 5rem;
+   height: 5rem;
+   background: var(--text-color);
+   border-radius: 50%;
+}
+
+.Doc-layer a i {
+   font-size: 2rem;
+   color: var(--second-bg-color);
+}
+
+
+
+
+@media (max-width:1200px){
+   html{
+      font-size: 55%;
+   }
+}
+
+
+@media(max-width:768px){
+   
+   .Doctors h2{
+      margin-bottom: 3rem;
+   }
+
+   .Doc-container{
+      grid-template-columns: repeat(2,1fr);
+   }
+}
+
+@media(max-width:617px){
+   .Doc-container{
+      grid-template-columns: 1fr;
+   }
+}
+
+
+
+
+#msg{
+   color: #61b752;
+   margin-top: -10px;
+   display: block;
+}
+.heading {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+@keyframes animate-progress {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes animate-bar {
+    100% {
+        stroke-dashoffset: -1;
+    }
+}
+.home a{
+    width: 70px;
+    height:50px ;
+    font-size: 15px;
+    color: black;
+    background-color: #f1f1f1;
+}
+
+
+.path {
+    stroke-width: 10;
+    stroke: #0ef;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+
+.path-1 {
+    animation: animate-path1 1s 1s linear forwards;
+}
+
+.path-2 {
+    animation: animate-path1 1s 1s linear forwards;
+}
+
+.path-3 {
+    animation: animate-path1 1s 1s linear forwards;
+}
+
+.path-4 {
+    animation: animate-path1 1s 1s linear forwards;
+}
+
+@keyframes animate-path1 {
+    100% {
+        stroke-dashoffset: 50;
+    }
+}
+
+@keyframes animate-path12 {
+    100% {
+        stroke-dashoffset: 175;
+    }
+}
+
+@keyframes animate-path1 {
+    100% {
+        stroke-dashoffset: 125;
+    }
+}
+
+@keyframes animate-path1 {
+    100% {
+        stroke-dashoffset: 75;
+    }
+}
+
+ </style>
+</head>
+<body>
+    <section class="Doctors"id="Doctors">
+        <h2 class="heading">Latest <span>Medical Professionals</span></h2>
+        <div class="Doc-container">
+            <div class="Doc-box">
+                <img src="Dr.USHA GUPTHA.jpg"alt="">
+                <div class="Doc-layer">
+                    <h4>Dr.USHA GUPTHA</h4>
+                    <p>Gynaecologists and Obstetricians are medical practitioners with specialisations in both gynaecology and obstetrics.</p>
+                    <a href="https://www.justdial.com/Varanasi/Dr-Usha-Gupta-Aashirvad-Multi-Speciality-Hospital-Near-Birdopur-Mahmoorganj/0542PX542-X542-100226001207-K7N8DC_BZDET"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="Doc-box">
+                <img src="Dr.Shipra Paul.jpg"alt="">
+                <div class="Doc-layer">
+                    <h4>Dr.SHIPRA PAUL</h4>
+                    <p>Anatomical study of anomalous posterior horn of lateral ventricle of brain and its clinical significance</p>
+                    <a href="https://www.justdial.com/Port-Blair/Dr-Shipra-Paul-Havelock/9999P3192-3192-140518123852-N6Z9_BZDET"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="Doc-box">
+                <img src="Dr.Chitra Raghunandhan.jpg"alt="">
+                <div class="Doc-layer">
+                    <h4>Dr.Chitra Raghunandhan</h4>
+                    <p>Obstetrics & Gynaecology</p>
+                    <a href="https://www.justdial.com/Delhi/Dr-Chitra-Raghunandan-Near-Hauz-Khas-Telephone-Exchange-Safdarjung-Development-Area/011PXX11-XX11-151210194925-T3G6_BZDET"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="Doc-box">
+                <img src="DR.M P Arora.jpg"alt="">
+                <div class="Doc-layer">
+                    <h4>DR.M P Arora</h4>
+                    <p>Best experienced medical professional with General Physician speciality</p>
+                    <a href="https://www.justdial.com/delhi/Dr-M-P-Arora/011PXX11-XX11-140526193536-V3C3_BZDET?auto=1&trkid=2305165136"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
